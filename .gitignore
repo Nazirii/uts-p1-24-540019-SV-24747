@@ -1,0 +1,11 @@
+# Rahasia - jangan pernah di-commit
+.env
+.env.*
+!.env.example
+
+# Folder sementara saat setup
+_laravel_tmp/
+
+.DS_Store
+.idea/
+.vscode/
