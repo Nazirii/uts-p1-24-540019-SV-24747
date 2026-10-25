@@ -48,3 +48,4 @@ Browser membuka Vue di container **frontend** (Nginx). Axios memanggil `/api/...
 cd backend && php artisan serve          # http://localhost:8000
 cd frontend && cp .env.example .env && npm install && npm run dev
 ```
+testtes testes
