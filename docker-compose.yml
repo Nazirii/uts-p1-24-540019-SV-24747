@@ -44,6 +44,11 @@ services:
       QUEUE_CONNECTION: sync
     ports:
       - "8000:8000"                   # opsional, untuk uji langsung dari Postman
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/up"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
     networks:
       - agenda-net
 
